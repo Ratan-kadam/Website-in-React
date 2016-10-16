@@ -1,1 +1,5 @@
-sample react application,,.
+sample react application.
+
+Run command :
+              npm install
+              npm start 
