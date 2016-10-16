@@ -12,4 +12,4 @@ ReactDOM.render(
   <Provider store={store}>
     <AppContainer />
   </Provider>
-  , document.querySelector('.container'));
+  , document.querySelector('.mycontainer'));
