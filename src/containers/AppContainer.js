@@ -1,6 +1,9 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Mysample from '../components/mysample';
+import Nav from '../components/Nav';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 import * as constants from '../constants/AppConstants';
 import { addNewData, addTabsCount  } from '../actions/FileActions';
 
@@ -13,16 +16,14 @@ const propTypes = {
 
 class AppContainer extends Component {
   componentDidMount() {
-     alert("component mounted ..")
   }
 
   render() {
     return (
       <div>
-              this is xxxx
-              below is sample component
-              <Mysample  {...this.props}/>
-
+              <Nav  {...this.props} />
+              <Header  {...this.props} />
+              <Footer  {...this.props} />
       </div>
     )
   }
