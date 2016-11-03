@@ -15,8 +15,6 @@ export default class Header extends Component {
     console.log("header props");
     console.log(this.props);
     return (<div className="header">
-      <button className="btn btn-primary"> primary button </button>
-        <button className="btn btn-danger"> primary button </button>
     </div>)
   }
 }

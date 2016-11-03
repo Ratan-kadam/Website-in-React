@@ -4,6 +4,9 @@ import Mysample from '../components/mysample';
 import Nav from '../components/Nav';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Acccordian from '../components/Acccordian';
+import Accord from '../components/Accord';
+import config  from '../components/config';
 import * as constants from '../constants/AppConstants';
 import { addNewData, addTabsCount  } from '../actions/FileActions';
 
@@ -19,10 +22,16 @@ class AppContainer extends Component {
   }
 
   render() {
+    console.log("accordian");
+    console.log(config);
+    let accordlist = config.Acccordian;
+    let navoptions = config.navoptions;
+
+//// <Header  {...this.props} />
     return (
       <div>
-              <Nav  {...this.props} />
-              <Header  {...this.props} />
+              <Nav  {...this.props} options={navoptions} />
+              <Acccordian {...this.props}  accordianList={accordlist} />
               <Footer  {...this.props} />
       </div>
     )
