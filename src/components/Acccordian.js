@@ -11,8 +11,6 @@ export default class Acccordian extends Component {
   }
 
   render() {
-    console.log("Accordian props");
-    console.log(this.props);
     let list = this.props.accordianList;
     var dataWithHtml = list.map(function(item,index){
        return (<div  key={index} className="innerBox">

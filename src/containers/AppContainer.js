@@ -27,7 +27,6 @@ class AppContainer extends Component {
     let accordlist = config.Acccordian;
     let navoptions = config.navoptions;
 
-//// <Header  {...this.props} />
     return (
       <div>
               <Nav  {...this.props} options={navoptions} />
