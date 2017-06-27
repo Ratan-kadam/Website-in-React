@@ -14,8 +14,6 @@ export default class Mysample extends Component {
 
 
   render() {
-    console.log("this.props");
-    console.log(this.props);
     return (<div>
       this is my sample component iiiii
     </div>)

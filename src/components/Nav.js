@@ -12,8 +12,6 @@ export default class Nav extends Component {
 
 
   render() {
-    console.log("Nav props");
-    console.log(this.props);
     let options = this.props.options;
 
     var itemsWithHtml = this.props.options.map(function(item,index){

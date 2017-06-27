@@ -13,8 +13,6 @@ export default class Footer extends Component {
 
 
   render() {
-    console.log("Footer props");
-    console.log(this.props);
     return (<div className="footer" />)
   }
 }
