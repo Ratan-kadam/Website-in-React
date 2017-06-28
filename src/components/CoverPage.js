@@ -24,7 +24,7 @@ export default class CoverPage extends Component {
                     Ratan M. Kadam
                   </h1>
                   <h3>
-                    Software Engineer
+                    UI Engineer
                   </h3>
                   <hr className="intro-divider animated lightSpeedIn" />
                   <ul className="list-inline intro-social-buttons">

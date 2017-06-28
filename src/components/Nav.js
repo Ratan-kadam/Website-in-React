@@ -16,7 +16,7 @@ export default class Nav extends Component {
        <div className="topnav" id="myTopnav">
        <div className="row">
        <div className="col-xs-12 col-sm-6">
-         <a href="#home">Ratan.Kadam@Gmail.Com</a>
+         <a href="#home">Ratan.kadam@gmail.com</a>
        </div>
          <div className="col-xs-12 col-sm-6 topnav__options">
            <a href="#contact">Contact</a>

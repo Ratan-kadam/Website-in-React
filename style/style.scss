@@ -1,16 +1,17 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #e7e7e7;
+    background-color: black;
     overflow: hidden;
     background-position: fixed;
     top: 0;
+
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
     float: left;
     display: block;
-    color: black;
+    color: #ddd;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -3344,7 +3345,7 @@ p.copyright {
 
 .overlay {
     position:absolute;
-    left: 13%;
+    left: 11%;
     top:38%;
     z-index:1;
 }
