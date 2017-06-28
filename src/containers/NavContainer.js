@@ -22,8 +22,6 @@ class NavContainer extends Component {
   }
 
   render() {
-    console.log("Nav container props");
-    console.log(this.props);
     return (
         <Nav  {...this.props} />
     )
