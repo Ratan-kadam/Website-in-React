@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import Mysample from '../components/mysample';
+import Nav from '../components/Nav';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Acccordian from '../components/Acccordian';
@@ -16,30 +17,27 @@ const propTypes = {
   input: PropTypes.object,
 };
 
-class AppContainer extends Component {
+class NavContainer extends Component {
   componentDidMount() {
   }
 
   render() {
-    let accordlist = config.Acccordian;
-    let navoptions = config.navoptions;
-
+    console.log("Nav container props");
+    console.log(this.props);
     return (
-      <div>
-              <Acccordian {...this.props}  accordianList={accordlist} />
-      </div>
+        <Nav  {...this.props} />
     )
   }
 }
 
-AppContainer.propTypes = propTypes;
+NavContainer.propTypes = propTypes;
 
 
 function mapStateToProps(state) {
-  const { input } = state;
+  const { navReducer } = state;
   return {
-    input,
+    navReducer,
   };
 }
 
-export default connect(mapStateToProps)(AppContainer);
+export default connect(mapStateToProps)(NavContainer);

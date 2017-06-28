@@ -12,13 +12,11 @@ export default class Nav extends Component {
 
 
   render() {
-    console.log("Nav props");
-    console.log(this.props);
     let options = this.props.options;
 
-    var itemsWithHtml = this.props.options.map(function(item,index){
+    var itemsWithHtml = this.props.options ? this.props.options.map(function(item,index){
           return (<a key={index} className="pull-right" href="#">{item}</a>);
-    });
+    }) : '';
 
     return (<div className="nav">
             <div className="row">
