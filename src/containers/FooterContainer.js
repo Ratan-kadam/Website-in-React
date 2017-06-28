@@ -16,7 +16,6 @@ class FooterContainer extends Component {
   }
 
   render() {
-    console.log("footer compo", this.props);
     return (
       <Footer  {...this.props} />
     );

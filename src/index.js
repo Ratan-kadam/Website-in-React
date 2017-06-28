@@ -12,7 +12,7 @@ import FooterContainer from './containers/FooterContainer';
 const store = configureStore();
 ReactDOM.render(
   <Provider store={store}>
-  <div>
+  <div className="overall">
     <NavContainer />
     <AppContainer />
     <FooterContainer />

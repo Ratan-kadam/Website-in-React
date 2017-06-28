@@ -12,23 +12,21 @@ export default class Nav extends Component {
 
 
   render() {
-    let options = this.props.options;
-
-    var itemsWithHtml = this.props.options ? this.props.options.map(function(item,index){
-          return (<a key={index} className="pull-right" href="#">{item}</a>);
-    }) : '';
-
-    return (<div className="nav">
-            <div className="row">
-              <div className="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <span> Ratan M Kadam </span>
-              </div>
-              <div className="col-lg-3 col-md-3 col-sm-12 col-xs-12 col-lg-offset-3 col-md-offset-3 navoption">
-                  {itemsWithHtml}
-              </div>
-              </div>
-    </div>)
-  }
+     return (
+       <div className="topnav" id="myTopnav">
+       <div className="row">
+       <div className="col-xs-12 col-sm-6">
+         <a href="#home">Ratan.Kadam@Gmail.Com</a>
+       </div>
+         <div className="col-xs-12 col-sm-6 topnav__options">
+           <a href="#contact">Contact</a>
+           <a href="#about">About</a>
+            <a href="#home">Home</a>
+         </div>
+       </div>
+       </div>
+   );
+ }
 }
 
 Nav.propTypes = propTypes;

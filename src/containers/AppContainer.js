@@ -1,11 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
-import Mysample from '../components/mysample';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Acccordian from '../components/Acccordian';
-import Accord from '../components/Accord';
-import config  from '../components/config';
+import CoverPage from '../components/CoverPage';
 import * as constants from '../constants/AppConstants';
 import { addNewData, addTabsCount  } from '../actions/FileActions';
 
@@ -21,14 +16,9 @@ class AppContainer extends Component {
   }
 
   render() {
-    let accordlist = config.Acccordian;
-    let navoptions = config.navoptions;
-
     return (
-      <div>
-              <Acccordian {...this.props}  accordianList={accordlist} />
-      </div>
-    )
+      <CoverPage {...this.props}/>
+    );
   }
 }
 
