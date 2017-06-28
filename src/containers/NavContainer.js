@@ -22,15 +22,15 @@ class NavContainer extends Component {
   }
 
   render() {
+    console.log("Nav container props");
+    console.log(this.props);
     return (
-      <div>
-          this is Nav Container.
-      </div>
+        <Nav  {...this.props} />
     )
   }
 }
 
-AppContainer.propTypes = propTypes;
+NavContainer.propTypes = propTypes;
 
 
 function mapStateToProps(state) {
