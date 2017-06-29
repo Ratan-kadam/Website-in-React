@@ -22,8 +22,8 @@ export default class AboutMe extends Component {
             </div>
           </div>
           <div className="row">
-            <div className="col-sm-offset-1 col-sm-11 textFont aboutMe flex">
-              <div className="push-10 hidden-xs"> <img src="../src/img/ratan.jpg" /> </div>
+            <div className="col-sm-12 textFont aboutMe flex">
+              <div className="hidden-xs"> <img src="../src/img/ratan.jpg" /> </div>
               <ul>
                 <li>Graduate student at San Jose State University majoring in Software
                   Engineering, specialized in <span class="strong headingBlue">Front end </span>-
