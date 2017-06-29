@@ -3369,8 +3369,39 @@ p.copyright {
   font-size: 50px;
 }
 
-.overlay .intro-divider {
-  width: 469px;
-  border-top: 4px solid #f8f8f8;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+.dashLine {
+  background-color: #e7e7e7;
+  height: 5px;
 }
+
+.headingBlue {
+    font-weight: 800;
+    color: #000060;
+    font-size: 2.5em;
+    font-style: italic;
+    font-family: Satisfy;
+  }
+
+  .textFont {
+    font-style: italic;
+    font-family: Satisfy;
+    font-size: 1.5em;
+  }
+
+  .aboutMe {
+    padding-right: 90px;
+    max-height: 500px;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .push-5 {
+    margin-bottom: 5px;
+  }
+
+  .push-10 {
+    margin-bottom: 10px;
+  }

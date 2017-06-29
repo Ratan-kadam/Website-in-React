@@ -17,7 +17,7 @@ class ParentContainer extends Component {
       show: true,
     };
 
-    this.splashTimer = 5000;
+    this.splashTimer = 1000;
 
   }
 
@@ -30,7 +30,6 @@ class ParentContainer extends Component {
   render() {
     const { show } = this.state;
     if(show) {
-      console.log("showing splash");
       return (<Splash />);
     }
 

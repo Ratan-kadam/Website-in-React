@@ -1,6 +1,7 @@
 import React, { Component, PropTypes } from 'react';
 import { connect } from 'react-redux';
 import CoverPage from '../components/CoverPage';
+import AboutMe from '../components/AboutMe';
 import * as constants from '../constants/AppConstants';
 import { addNewData, addTabsCount  } from '../actions/FileActions';
 
@@ -17,7 +18,10 @@ class AppContainer extends Component {
 
   render() {
     return (
-      <CoverPage {...this.props}/>
+      <div>
+        <CoverPage {...this.props} />
+        <AboutMe {...this.props} />
+      </div>
     );
   }
 }
