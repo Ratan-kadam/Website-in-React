@@ -7,15 +7,13 @@ import { Provider } from 'react-redux';
 import configureStore from './store/configureStore';
 import AppContainer from './containers/AppContainer';
 import NavContainer from './containers/NavContainer';
+import Splash from './components/Splash'
 import FooterContainer from './containers/FooterContainer';
+import ParentContainer from './containers/ParentContainer';
 
 const store = configureStore();
 ReactDOM.render(
   <Provider store={store}>
-  <div className="overall">
-    <NavContainer />
-    <AppContainer />
-    <FooterContainer />
-  </div>
+  <ParentContainer />
   </Provider>
   , document.querySelector('.mycontainer'));

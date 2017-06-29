@@ -13,7 +13,7 @@ export default class CoverPage extends Component {
     return(
       <div className="intro-header">
       <div className="video-container">
-          <video width="99%" id="the-video" autoPlay="autoPlay" loop>
+          <video width="100%" id="the-video" autoPlay="autoPlay" loop muted>
               <source src="../src/img/Workaholic.mp4" type="video/mp4" />
               Your browser does not support the video tag. I suggest you upgrade your browser.
           </video>
