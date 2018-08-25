@@ -14,7 +14,15 @@ module.exports = {
         { test: /\.scss$/, loaders: ['style', 'css', 'postcss', 'sass'] },
         { test: /\.(gif|png|jpe?g|svg)$/, loaders: ['url-loader'] },
         { test: /\.mp4$/, loader: 'url?limit=10000&mimetype=video/mp4' },
-        { test: /\.html$/, loader: 'html-loader?attrs[]=video:src' }
+        { test: /\.html$/, loader: 'html-loader?attrs[]=video:src' },
+        {
+                test: /\.(eot|svg|ttf|woff|woff2)$/,
+                loader: 'file?name=public/fonts/[name].[ext]'
+        },
+            {
+                    test: /\.(eot|svg|ttf|woff|woff2)$/,
+                    loader: 'file?name=public/style/css/assets/fonts/[name].[ext]'
+                },
       ]
   },
   resolve: {
